@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Sign Up</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sign-Up Form</h2>
+        <form id="signinForm">
+            <div class="row">
+                <label for="email">Email:</label>
+                <br>
+                <input type="text" id="email" required placeholder="enter email">
+            </div>
+
+            <div class="row">
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" required placeholder="enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <span class="toggle" onclick="togglePassword()">
+                    <img id="incognito" src="/Sesi 7Proyek - Form Sign in/incognito.png" alt="incognito" width="20px" >
+                </span>
+            </div>
+
+            <div class="row">
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" required placeholder="enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+                <span class="toggle" onclick="togglePassword()">
+                    <img id="incognito" src="/Sesi 7Proyek - Form Sign in/hide.png" alt="incognito" width="20px" >
+                </span>
+            </div>
+
+            <div class="row">
+                <button type="submit">SIGN UP</button>
+            </div>
+
+            <div class="link">
+                Do you have a human heart? <span><a href="http://127.0.0.1:5500/Sesi%207Proyek%20-%20Form%20Sign%20in/index.html/Index.html?"
+                >Click Here</a></span>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
